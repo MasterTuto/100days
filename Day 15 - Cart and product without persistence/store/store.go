@@ -73,7 +73,7 @@ func (c Cart) String() string {
 	result := ""
 
 	for _, item := range c.items {
-		result += fmt.Sprintf("%d - %s (Qntd: %d)- R$ %.2f\n", item.product.id, item.quantity, item.product.name, item.SubTotal())
+		result += fmt.Sprintf("%d - %s (Qntd: %d)- R$ %.2f\n", item.product.id, item.product.name, item.quantity, item.SubTotal())
 	}
 
 	// append total
